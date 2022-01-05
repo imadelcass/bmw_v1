@@ -1,0 +1,50 @@
+const Folders = [
+  {
+    id: 1,
+    name: 'accessoire',
+    hasChild: true,
+    hasParent: false,
+    idSerie: 1,
+    idModel: 1,
+    hasPdfs: false,
+  },
+  {
+    id: 2,
+    name: 'engin',
+    hasChild: true,
+    hasParent: false,
+    idModel: 1,
+    hasPdfs: false,
+  },
+  {
+    id: 4,
+    name: 'electricity',
+    hasChild: true,
+    hasParent: true,
+    idModel: 1,
+    hasPdfs: true,
+    idParent: 1,
+  },
+  {
+    id: 5,
+    name: 'water',
+    hasChild: false,
+    hasParent: true,
+    idSerie: 1,
+    idModel: 1,
+    idParent: 1,
+    hasPdfs: false,
+  },
+  {
+    id: 6,
+    name: 'shema',
+    hasChild: false,
+    hasParent: true,
+    idSerie: 1,
+    idModel: 1,
+    idParent: 4,
+    hasPdfs: true,
+  },
+];
+
+export default Folders;
